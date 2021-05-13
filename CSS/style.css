@@ -4,6 +4,16 @@
     padding: 0;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fl{
+    float;
+}
+
 .container-1{
     width: 100%;
     background-color: aquamarine;
@@ -32,6 +42,14 @@ main .sidebar{
     background: rgb(0, 0, 0);
     
 }
+
+.sidebar{
+    flex-basis: auto;
+    flex-shrink: 0;
+}
+
+
+
 
 main .content{
     background-color: rgb(23, 24, 59);
@@ -156,6 +174,7 @@ ul{
 
 
 .ul-footer{
+    margin-top: 20px;
     display: flex;
     flex-basis: 60px;
     
@@ -168,4 +187,37 @@ ul:first-child{
 ul:last-child{
     flex-basis: 200px;
     justify-content: flex-end;
+}
+
+
+.section-video{
+    width: 1000px;
+    height: 100vh;
+    background-color: blanchedalmond;
+    margin-top: 70px;
+    padding: 10px;
+    
+}
+
+
+
+.bar-video{
+    flex-grow: 1;
+}
+
+
+.timer{
+    font-size: 9px;
+    color: lightgrey;
+}
+
+.bar-1{
+    height: 3px;
+    width: 100%;
+    background-color: gray;
+}
+.bar-2{
+    height: 100%;
+    width: 30%;
+    background-color: lightgray;
 }
