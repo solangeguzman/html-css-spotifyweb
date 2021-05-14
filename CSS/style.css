@@ -125,6 +125,47 @@ li{
   color: rgb(255, 255, 255);
 }
 
+
+/* section-video */
+.section-video{
+    width: 100%;
+    background-color: blanchedalmond;
+    margin-top: 70px;
+    padding: 10px;
+    
+}
+
+.section-1{
+border: solid white 3px;
+width: 100%;
+
+}
+
+.section-2{
+ border: solid rgb(50, 153, 110) 3px; 
+ width: 100%;
+  
+}
+
+.section-3{
+    border: solid rgb(72, 10, 131) 3px; 
+    width: 100%; 
+    
+   }
+
+   .container-img{
+       border: steelblue solid 3px;
+       width: 100%;
+       display: flex;
+       align-items: flex-start;
+      
+    }
+    
+    .section-video img{
+        padding: 10px;
+    }
+/* inizio sidebar */
+
 #logo{
     padding: 10px;
 }
@@ -172,6 +213,7 @@ ul{
     color: white;
 }
 
+/* footer */
 
 .ul-footer{
     margin-top: 20px;
@@ -188,17 +230,6 @@ ul:last-child{
     flex-basis: 200px;
     justify-content: flex-end;
 }
-
-
-.section-video{
-    width: 1000px;
-    height: 100vh;
-    background-color: blanchedalmond;
-    margin-top: 70px;
-    padding: 10px;
-    
-}
-
 
 
 .bar-video{
