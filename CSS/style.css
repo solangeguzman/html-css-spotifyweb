@@ -143,19 +143,26 @@ margin-bottom: 20px;
     margin-bottom: 30px;
 }
 
-/* sezione hover dei vari video 
 
-#ex-2-animation {
-    animation-play-state: initial;
-    transition: background-color 2s;
-    
+.section-img-metal{
+    background-image: url(../img/metal_lifting.jpg);
+    background-size: cover;
+    width: 140px;
+    height: 150px;
+    margin-bottom: 5px;  
+    display: block;
+    animation: alternate;
+    transition: filter 3s;
+}
+ 
+.section-img-metal:hover+.i-metal{
+    display: block;  
+    filter: (%);
 }
 
-#ex-2-animation:hover{
-    background-color: lawngreen;
-}
 
-fine  */
+
+
 
 #img-section{
    border-radius: 80px 80px 80px 80px; 
