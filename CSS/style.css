@@ -145,23 +145,24 @@ margin-bottom: 20px;
 
 /* sezione immagini */
 .section-img-metal{
-    background-image: url(../img/metal_lifting.jpg);
-    background-size: cover;
-    width: 140px;
-    height: 150px;
-    margin-bottom: 5px;  
-    display: block;
-    animation: alternate;
-    transition: filter 3s;
+   position: relative;   
 }
  
-.section-img-metal:hover+.i-metal{
-    display: block;  
-    filter: (%);
+.section-img-metal:hover .far-play{
+    display: block;
+    filter: (20%);
 }
 
-
-/* fine */
+#container-img img:hover{
+    filter: opacity(50%)
+}
+/*  
+.play{
+    color: white;
+    font-size: 40px;
+    display: none;  
+}
+ fine */
 
 
 #img-section{
