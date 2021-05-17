@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body{
+   font-family: 'Montserrat', serif;
+ 
+}
 .clearfix::after {
     content: "";
     display: table;
@@ -125,37 +129,41 @@ li{
     background-color: rgb(23, 24, 59);
     margin-top: 70px;
     padding: 10px;
-}
-
+} 
 .section-1{
-width: 910px;
+
 margin-bottom: 20px;
 
 }
 
 .section-2{
- width: 100%;
+
  margin-bottom: 20px; 
 }
 
 .section-3{
-    width: 100%; 
+     
     margin-bottom: 30px;
 }
 
 /* sezione immagini */
-.section-img-metal{
-   position: relative;   
-}
- 
+.section-img{
+    width: calc(100% / 6 - 15px);
+    margin-right: 15px;     
+ }    
+
+ /*  
 .section-img-metal:hover .far-play{
     display: block;
     filter: (20%);
 }
 
-#container-img img:hover{
+#container-img section-img:hover{
     filter: opacity(50%)
 }
+ */
+
+
 /*  
 .play{
     color: white;
@@ -170,18 +178,67 @@ margin-bottom: 20px;
 }
 
 #container-img{
-     width: 100%;
-     display: flex;
+    width: 100%;
+    display: flex;  
+    flex-wrap: wrap; 
 }
-    
-.section-video img{
-    padding: 5px;       
+ 
+.cover-container{
+    position: relative;
+}
+
+.cover-container img{
+    width: 100%;
+}
+
+ 
+.section-img .play{
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(8, 4, 4, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+}
+
+
+.section-img:hover .play{
+    opacity: 1;
+
+}
+
+.author-cover{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+@media all and (max-width: 991px){
+    .section-img{
+        width: calc(100% / 4 - 15px);
+    }
+}
+
+@media all end ( max-width: 767px){
+    .section-img{
+    width: calc(100% / 2 - 15px);
+    }
+}
+
+@media all end (max-width: 576px){
+    .section-img{
+        width: calc(100% / 1 -15px);
+    }
 }
 
 .testo-img{
-width: 100%;
-text-align: center;
-
+  text-align: center;
+  width: 150px;
 }
 
 h2{
@@ -212,17 +269,15 @@ h4{
 
 .text-1{
     color: rgb(80, 74, 74);  
-    padding: 6px;  
+    padding: 6px; 
+    font-size: 11px; 
 }
 
 ul{
     padding: 10px;
 }
 
-.sidebar > li{
-    
-    font-size: 12px;
-}
+
 
 #arrow{
     color: white;
